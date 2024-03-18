@@ -1,3 +1,3 @@
-# `@napi-rs/package-template-linux-arm-gnueabihf`
+# `learning-napi-rs-linux-arm-gnueabihf`
 
-This is the **armv7-unknown-linux-gnueabihf** binary for `@napi-rs/package-template`
+This is the **armv7-unknown-linux-gnueabihf** binary for `learning-napi-rs`

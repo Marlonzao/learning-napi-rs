@@ -179,30 +179,111 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@napi-rs/package-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@napi-rs/package-template@workspace:."
+"@napi-rs/package-template-android-arm64@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-android-arm64@npm:1.0.0"
+  conditions: os=android & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-darwin-arm64@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-darwin-arm64@npm:1.0.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-darwin-x64@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-darwin-x64@npm:1.0.0"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-arm-gnueabihf@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-arm-gnueabihf@npm:1.0.0"
+  conditions: os=linux & cpu=arm
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-arm64-gnu@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-arm64-gnu@npm:1.0.0"
+  conditions: os=linux & cpu=arm64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-x64-gnu@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-x64-gnu@npm:1.0.0"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-linux-x64-musl@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-linux-x64-musl@npm:1.0.0"
+  conditions: os=linux & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template-win32-x64-msvc@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template-win32-x64-msvc@npm:1.0.0"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@napi-rs/package-template@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@napi-rs/package-template@npm:1.0.0"
   dependencies:
-    "@napi-rs/cli": "npm:^2.16.4"
-    "@swc-node/register": "npm:^1.6.8"
-    "@swc/core": "npm:^1.3.95"
-    "@taplo/cli": "npm:^0.7.0"
-    "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
-    "@typescript-eslint/parser": "npm:^7.0.0"
-    ava: "npm:^6.0.0"
-    benny: "npm:^3.7.1"
-    chalk: "npm:^5.3.0"
-    eslint: "npm:^8.52.0"
-    eslint-config-prettier: "npm:^9.0.0"
-    eslint-plugin-import: "npm:^2.29.0"
-    eslint-plugin-prettier: "npm:^5.0.1"
-    husky: "npm:^9.0.0"
-    lint-staged: "npm:^15.0.2"
-    npm-run-all2: "npm:^6.0.0"
-    prettier: "npm:^3.0.3"
-    typescript: "npm:^5.2.2"
-  languageName: unknown
-  linkType: soft
+    "@napi-rs/package-template-android-arm64": "npm:^1.0.0"
+    "@napi-rs/package-template-darwin-arm64": "npm:^1.0.0"
+    "@napi-rs/package-template-darwin-x64": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-arm-gnueabihf": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-arm64-gnu": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-x64-gnu": "npm:^1.0.0"
+    "@napi-rs/package-template-linux-x64-musl": "npm:^1.0.0"
+    "@napi-rs/package-template-win32-x64-msvc": "npm:^1.0.0"
+    "@node-rs/helper": "npm:^1.0.0"
+  dependenciesMeta:
+    "@napi-rs/package-template-android-arm64":
+      optional: true
+    "@napi-rs/package-template-darwin-arm64":
+      optional: true
+    "@napi-rs/package-template-darwin-x64":
+      optional: true
+    "@napi-rs/package-template-linux-arm-gnueabihf":
+      optional: true
+    "@napi-rs/package-template-linux-arm64-gnu":
+      optional: true
+    "@napi-rs/package-template-linux-x64-gnu":
+      optional: true
+    "@napi-rs/package-template-linux-x64-musl":
+      optional: true
+    "@napi-rs/package-template-win32-x64-msvc":
+      optional: true
+  checksum: 10c0/7d8d230dea32da86121e7341f91943e400b6145e51346da114e4ea25b4b487eacf2f0f7b605da6aa12a7c6b97c929d3cc9227a7a0e23a7062511ba231f98209a
+  languageName: node
+  linkType: hard
+
+"@napi-rs/triples@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@napi-rs/triples@npm:1.2.0"
+  checksum: 10c0/e8294cc63d36fe0b062dc5293a0a2c72ae9318676dd76168e969a8f47b95180e7fe80a301fc0d9c6688399494744bfe21275b58f247f2981b558898743389e0f
+  languageName: node
+  linkType: hard
+
+"@node-rs/helper@npm:^1.0.0":
+  version: 1.5.0
+  resolution: "@node-rs/helper@npm:1.5.0"
+  dependencies:
+    "@napi-rs/triples": "npm:^1.2.0"
+  checksum: 10c0/fcc864d825f3889ab08b7947734fddf2acd9de9dc0e9f2026ce220f02f2b461c2af43e012971e93d58a5228a604bc7fb382f45783b10b82603f4605988107aeb
+  languageName: node
+  linkType: hard
 
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
@@ -2819,6 +2900,32 @@ __metadata:
   checksum: 10c0/e9de6cb49657b6fa70ba2d1448fd3d691a5c4370d8f7bbf1c2f64c24d461270f2117e1b0afe8cb3114f13bbd8e51de158c2a224953960331904e636a5e4c0f2a
   languageName: node
   linkType: hard
+
+"learning-napi-rs@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "learning-napi-rs@workspace:."
+  dependencies:
+    "@napi-rs/cli": "npm:^2.16.4"
+    "@napi-rs/package-template": "npm:^1.0.0"
+    "@swc-node/register": "npm:^1.6.8"
+    "@swc/core": "npm:^1.3.95"
+    "@taplo/cli": "npm:^0.7.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.0.0"
+    "@typescript-eslint/parser": "npm:^7.0.0"
+    ava: "npm:^6.0.0"
+    benny: "npm:^3.7.1"
+    chalk: "npm:^5.3.0"
+    eslint: "npm:^8.52.0"
+    eslint-config-prettier: "npm:^9.0.0"
+    eslint-plugin-import: "npm:^2.29.0"
+    eslint-plugin-prettier: "npm:^5.0.1"
+    husky: "npm:^9.0.0"
+    lint-staged: "npm:^15.0.2"
+    npm-run-all2: "npm:^6.0.0"
+    prettier: "npm:^3.0.3"
+    typescript: "npm:^5.2.2"
+  languageName: unknown
+  linkType: soft
 
 "levn@npm:^0.4.1":
   version: 0.4.1
